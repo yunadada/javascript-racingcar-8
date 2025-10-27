@@ -1,6 +1,6 @@
 function validateInput(carNamesString, attemptCountString) {
   // 자동차 이름 및 구분자 검증
-  const invalidRegex = /[^a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ가-힣,]/;
+  const invalidRegex = /[^a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ가-힣, ]/;
   if (invalidRegex.test(carNamesString)) {
     throw new Error("[ERROR] 구분자는 쉼표만 가능합니다.");
   }
